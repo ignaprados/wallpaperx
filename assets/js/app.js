@@ -15,7 +15,7 @@ const sr = ScrollReveal({
 });
 
 /* = SCROLL IMG = */
-sr.reveal('.foto',{delay:100, scale: 0.90, });
+sr.reveal('.foto',{scale: 0.90, });
 
 
 /* ===== BACK TO TOP BUTTON ===== */
