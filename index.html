@@ -11,6 +11,8 @@
         <link  rel="icon"   href="assets/img/favicon.png" type="image/png" />
         <!-- ===== FONT AWESOME ===== -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
         <div class="header">
@@ -21,64 +23,90 @@
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Wallpaper<span class="invisible">.</span><span>X</span></h1>
-                <p>Descubrí los mejores fondos de pantalla.</p>
+                <p>Los mejores fondos de pantalla están acá.</p>
                 <i class="fas fa-mobile-alt"></i>
             </div>
         </div>
         <div style="height: 150px; overflow: hidden;" class="wave" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:  rgb(15,15,15);"></path></svg></div>
 
 
+            <!-- ===== BACK TO TOP BUTTON ===== -->
+            <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+
+
     <!-- Photo Grid -->
     <section class="gallery">
         <div class="row">
-        <div class="column">
-        <img src="assets/img/1.jpg" style="width:100%" class="foto">
-        <img src="assets/img/2.jpg" style="width:100%" class="foto">
-        <img src="assets/img/10.jpg" style="width:100%" class="foto">
-        <img src="assets/img/4.jpg" style="width:100%" class="foto">
-        <img src="assets/img/5.jpg" style="width:100%" class="foto">
-        <img src="assets/img/6.jpg" style="width:100%" class="foto">
-        <img src="assets/img/7.jpg" style="width:100%" class="foto">
-        <img src="assets/img/7.jpg" style="width:100%" class="foto">
-        <img src="assets/img/7.jpg" style="width:100%" class="foto">
-        <img src="assets/img/7.jpg" style="width:100%" class="foto">
-        </div>
-        <div class="column">
-        <img src="assets/img/8.jpg" style="width:100%" class="foto">
-        <img src="assets/img/9.jpg" style="width:100%" class="foto">
-        <img src="assets/img/3.jpg" style="width:100%" class="foto">
-        <img src="assets/img/11.jpg" style="width:100%" class="foto">
-        <img src="assets/img/12.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        </div>
-        <div class="column">
-        <img src="assets/img/14.jpg" style="width:100%" class="foto">
-        <img src="assets/img/15.jpg" style="width:100%" class="foto">
-        <img src="assets/img/16.jpg" style="width:100%" class="foto">
-        <img src="assets/img/17.jpg" style="width:100%" class="foto">
-        <img src="assets/img/18.jpg" style="width:100%" class="foto">
-        <img src="assets/img/19.jpg" style="width:100%" class="foto">
-        <img src="assets/img/20.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        <img src="assets/img/13.jpg" style="width:100%" class="foto">
-        </div>
-        <div class="column">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        <img src="assets/img/21.jpg" style="width:100%" class="foto">
-        </div>
+            <div class="column">
+                <img src="assets/img/1.jpg" style="width:100%" class="foto">
+                <img src="assets/img/2.jpg" style="width:100%" class="foto">
+                <img src="assets/img/10.jpg" style="width:100%" class="foto">
+                <img src="assets/img/4.jpg" style="width:100%" class="foto">
+                <img src="assets/img/5.jpg" style="width:100%" class="foto">
+                <img src="assets/img/6.jpg" style="width:100%" class="foto">
+                <img src="assets/img/7.jpg" style="width:100%" class="foto">
+                <img src="assets/img/7.jpg" style="width:100%" class="foto">
+                <img src="assets/img/7.jpg" style="width:100%" class="foto">
+                <img src="assets/img/7.jpg" style="width:100%" class="foto">
+            </div>
+            <div class="column">
+                <img src="assets/img/8.jpg" style="width:100%" class="foto">
+                <img src="assets/img/9.jpg" style="width:100%" class="foto">
+                <img src="assets/img/3.jpg" style="width:100%" class="foto">
+                <img src="assets/img/11.jpg" style="width:100%" class="foto">
+                <img src="assets/img/12.jpg" style="width:100%" class="foto">
+                <img src="assets/img/13.jpg" style="width:100%" class="foto">
+                <img src="assets/img/13.jpg" style="width:100%" class="foto">
+                <img src="assets/img/13.jpg" style="width:100%" class="foto">
+                <img src="assets/img/13.jpg" style="width:100%" class="foto">
+                <img src="assets/img/13.jpg" style="width:100%" class="foto">
+                <img src="assets/img/13.jpg" style="width:100%" class="foto">
+            </div>
+            <div class="column">
+                <img src="assets/img/14.jpg" style="width:100%" class="foto">
+                <img src="assets/img/15.jpg" style="width:100%" class="foto">
+                <img src="assets/img/16.jpg" style="width:100%" class="foto">
+                <img src="assets/img/17.jpg" style="width:100%" class="foto">
+                <img src="assets/img/18.jpg" style="width:100%" class="foto">
+                <img src="assets/img/19.jpg" style="width:100%" class="foto">
+                <img src="assets/img/20.jpg" style="width:100%" class="foto">
+                <img src="assets/img/13.jpg" style="width:100%" class="foto">
+            </div>
+            <div class="column">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+                <img src="assets/img/21.jpg" style="width:100%" class="foto">
+            </div>
         </div>
     </section>
-    <script src="assets/js/app.js"></script>
+
+     <!-- ===== FOOTER ===== -->
+     <div style="height: 150px; overflow: hidden;" class="wave2" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:  #000000"></path></svg></div>
+     <footer class="footer">
+
+        <!-- ===== FOOTER TITLE ===== -->
+        <h4 class="footer__title">Wallpaper <span>X</span></h4>
+
+        <!-- ===== FOOTER SOCIAL LINKS ===== -->
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/ignacioprados/" target="_blank" class="footer__icon"><i class='fab fa-linkedin-in'></i></a>
+            <a href="https://github.com/IgnacioPrados" target="_blank" class="footer__icon"><i class='fab fa-github' ></i></a>
+            <a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="footer__icon"><i class='far fa-envelope' ></i></a>
+        </div>
+
+        <!-- ===== FOOTER COPYRIGHT ===== -->
+        <p class="footer__copy">Copyright &#169; 2021 Wallpaper X - Dev. by <a href="https://ignacioprados.github.io/web/" class="dev" target="_blank">Ignacio Prados.</a></p>
+
+    </footer>
+
+
+                <!--===== SCRIPT JS =====-->
+                <script src="assets/js/app.js"></script>
+
     </body>
 </html>

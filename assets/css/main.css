@@ -4,6 +4,10 @@ body, html {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar{
   background-color:  rgb(0, 0, 0);
   width: 10px;
@@ -80,7 +84,7 @@ body{
     padding: 12px 35px;
     color: rgb(255, 0, 0);
     text-align: center;
-    font-size: 45px;
+    font-size: 50px;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
@@ -112,6 +116,8 @@ body{
     font-size: 2vh;
   }
 }
+
+
 
 /*====== GRID ======*/
 .row {
@@ -161,4 +167,125 @@ body{
 
 .foto{
   border-radius: 25px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+  display: block;
+  z-index: 1;
+  position:relative;
+  background-color: #000000;
+}
+
+.footer__title{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  margin-top: 0%;
+  font-size: 50px;
+}
+
+.footer__title span{
+  color: #ff0000;
+}
+
+.footer__social{
+  margin-bottom: 2rem;
+}
+
+.footer__icon{
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+.footer__icon:hover{
+  color: red;
+}
+
+.footer__copy{
+  font-weight: 300;
+  font-size: 0.980rem;
+}
+
+.wave{
+  position: relative;
+  width: 100%;
+}
+
+.dev{
+  text-decoration: none;
+  color: #fff;
+}
+
+.dev:hover{
+  color: red;
+}
+
+
+/* ===== BACK TO TOP BUTTON =====*/
+#back-to-top-btn {
+  z-index: 1000;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(15, 15, 15);
+  color: red;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid red;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+/* = Animations = */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* = fadeInUp = */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+/* = fadeOutDown = */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }
