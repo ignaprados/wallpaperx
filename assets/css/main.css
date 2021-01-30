@@ -292,3 +292,36 @@ body{
     transform: translate3d(0, 100%, 0);
   }
 }
+
+
+/*========= DOWNLOAD BUTTON =========*/
+
+.img-container{
+  display:inline-block;
+  position:relative;
+  transition: all ease .3s;
+}
+
+.img-container:hover {
+  filter: brightness(0.7);
+}
+
+.img-container .btn {
+  text-decoration: none;
+}
+
+.img-container .btn i{
+  position: absolute;
+  bottom: .5em;
+  right: .5em;
+  font-size: 40px;
+  color: red;
+  border: solid 2px rgb(15, 15, 15);
+  background-color:rgb(15, 15, 15);
+  border-radius:25px;
+  transition: all ease .3s;
+}
+
+.img-container .btn i:hover{
+  color: rgb(255, 255, 255);
+}
