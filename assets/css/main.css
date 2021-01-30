@@ -1,10 +1,41 @@
 body, html {
     height: 100%;
-    overflow-x: hidden;
     margin: 0;
     font-family: 'Titillium Web', sans-serif;
 }
 
+body::-webkit-scrollbar{
+  background-color:  rgb(0, 0, 0);
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #ff0000;
+  border-radius: 15px;
+}
+
+body{
+  background-color: rgb(15, 15, 15);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: .6em;
+  background:  rgb(0, 0, 0);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: .6em;
+  background: #ff0000;
+  width: 0%;
+}
 
 .hero-image{
     background-position: center;
@@ -25,43 +56,62 @@ body, html {
 }
 
 .hero-text h1{
-    font-size: 6em;
+    font-size: 10vh;
     color: white;
     margin-bottom: 0%;
     margin-top: 0%;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
 }
 
 .hero-text p{
-    font-size: 2em;
+    font-size: 2.5vh;
     margin-top: 0%;
 }
 
-.hero-text button {
-    border: none;
-    outline: 0;
+.hero-text h1 span{
+  color: rgb(255, 0, 0);
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+.hero-text i {
     display: inline-block;
     padding: 12px 35px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(253, 82, 82);
+    color: rgb(255, 0, 0);
     text-align: center;
-    cursor: pointer;
-    border-radius: 25px;
+    font-size: 45px;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
 
-.hero-text button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-
 .wave{
-    text-align: center;
-    position: absolute;
-    top: 40%;
+    position: relative;
+    top: -9%;
     width: 100%;
 }
 
+.invisible{
+  opacity: 0;
+}
+
+@media screen and (max-width: 543px) {
+  .hero-text h1 {
+    font-size: 6.5vh;
+  }
+  .hero-text p {
+    font-size: 2vh;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .hero-text h1 {
+    font-size: 5.5vh;
+  }
+  .hero-text p {
+    font-size: 2vh;
+  }
+}
 
 /*====== GRID ======*/
 .row {
@@ -70,31 +120,36 @@ body, html {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+    width: 98%;
+    margin: auto;
+    margin-top: 0%;
   }
-  
+
   /* Create four equal columns that sits next to each other */
   .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    -ms-flex: 24%; /* IE10 */
+    flex: 24%;
+    max-width: 24%;
+    margin: .5%;
+    top: 0%;
   }
-  
+
   .column img {
-    margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    margin-top: 5%;
   }
-  
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+      -ms-flex: 48%;
+      flex: 48%;
+      max-width: 48%;
+      margin: 1%;
     }
   }
-  
+
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
@@ -103,3 +158,7 @@ body, html {
       max-width: 100%;
     }
   }
+
+.foto{
+  border-radius: 25px;
+}
