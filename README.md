@@ -1,4 +1,4 @@
-![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
+![banner](https://raw.githubusercontent.com/IgnacioPrados/wallpaperx/gh-pages/assets/img/preview.JPG)
 # WALLPAPER X
 
 Web Responsive de Fondos de Pantalla para Smartohones.
