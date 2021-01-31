@@ -82,4 +82,15 @@ function easeInOutCubic(t, b, c, d) {
 };
 
 
-/*========== IMAGES SHADOW HOVER ===========*/
+/*========== BUTTON HOVER APEARS ===========*/
+$(document).ready(function()
+  {
+    $('.img-container').hover(
+      function(){
+        $(this).children("a").addClass("hide"); //Add an active class to the anchor
+      },
+      function() {
+        $(this).children("a").removeClass("hide"); //Remove an active class to the anchor
+      }
+  )
+});

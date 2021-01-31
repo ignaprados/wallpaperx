@@ -295,19 +295,23 @@ body{
 
 
 /*========= DOWNLOAD BUTTON =========*/
-
 .img-container{
   display:inline-block;
   position:relative;
   transition: all ease .3s;
 }
 
-.img-container:hover {
+.img-container:hover{
   filter: brightness(0.7);
 }
 
 .img-container .btn {
   text-decoration: none;
+  visibility: hidden;
+}
+
+.hide{
+  visibility: visible !important;
 }
 
 .img-container .btn i{
@@ -319,9 +323,5 @@ body{
   border: solid 2px rgb(15, 15, 15);
   background-color:rgb(15, 15, 15);
   border-radius:25px;
-  transition: all ease .3s;
 }
 
-.img-container .btn i:hover{
-  color: rgb(255, 255, 255);
-}
