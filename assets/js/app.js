@@ -11,7 +11,7 @@ window.onscroll = function(){
 const sr = ScrollReveal({
   distance: '30px',
   duration: 1800,
-  reset: true
+  reset: false
 });
 
 /* = SCROLL IMG = */
