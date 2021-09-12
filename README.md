@@ -3,7 +3,7 @@
 
 Web Responsive de Fondos de Pantalla para Smartphones.
 
-[IgnacioPrados](https://github.com/IgnacioPrados)
+Creator: [IgnacioPrados](https://github.com/IgnacioPrados)
 
 https://wallpaperx.vercel.app
 
