@@ -13,4 +13,4 @@ https://wallpaperx.vercel.app
 - JavaScript
 - ScrollReveal.js
 
-> © 2021 Made by IgnacioPrados
+> © 2020 Made by IgnacioPrados
